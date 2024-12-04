@@ -1,7 +1,7 @@
 
 # 🌌 **MY-Gpt: Revolutionizing Conversations**  
 
-![MY-Gpt Banner](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*RZscCeAzRw6sRGdfzhK4yw.png)  
+![MY-Gpt Banner](https://img.pikbest.com/background/20220119/ai-artificial-intelligence-starry-sky-portrait-blue-technology-banner_6231445.jpg!sw800)  
 _A cutting-edge, AI-powered chatbot delivering intelligent and natural conversations._  
 
 ---
@@ -10,7 +10,7 @@ _A cutting-edge, AI-powered chatbot delivering intelligent and natural conversat
 
 🎉 **Try MY-Gpt Now**: [**Live Demo**](https://my-gpt-git-master-krish-prajapatis-projects.vercel.app/)  
 
-![AI Concept](https://techcrunch.com/wp-content/uploads/2023/05/AI-illustration.jpg?w=1390&crop=1)  
+![AI Concept](https://www.shutterstock.com/image-vector/artificial-intelligence-looking-smart-city-600nw-1825096265.jpg)
 
 ---
 
@@ -33,7 +33,6 @@ Whether you're looking for a virtual assistant or an AI-powered conversationalis
 - ⚡ **Fast and Scalable**: Optimized for high performance under heavy loads.  
 - 🎨 **Customizable UI**: Personalize themes, fonts, and layouts.  
 
-![AI Interaction](https://cdn.analyticsvidhya.com/wp-content/uploads/2021/06/AIML.jpg)  
 
 ---
 
@@ -79,7 +78,7 @@ Whether you're looking for a virtual assistant or an AI-powered conversationalis
 | **Database**      | MongoDB                      |
 | **Deployment**    | Vercel                       |
 
-![Tech Stack](https://miro.medium.com/v2/resize:fit:1200/1*PThJCs4YEBhHE_Pocix-pQ.png)  
+
 
 ---
 
@@ -126,14 +125,7 @@ We welcome contributions! Here's how you can help:
    ```  
 5. Open a Pull Request.  
 
----
-
-## 📜 **License**  
-This project is licensed under the [MIT License](LICENSE).  
-
-![AI Illustration](https://cdn-images-1.medium.com/max/800/1*plDwIVTZIlgR3JAbLLfYMg.png)  
-
----  
+--- 
 
 ### 🚀 **Join the Revolution**  
 
