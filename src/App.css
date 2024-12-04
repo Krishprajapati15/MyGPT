@@ -1,0 +1,347 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bg-dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.bg-light {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+.header {
+  padding: 25px 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: padding 0.3s;
+}
+
+.bg-light .header {
+  padding: 25px 20px;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #bb86fc;
+}
+
+.header button {
+  background: transparent;
+  border: 2px solid #bb86fc;
+  color: #bb86fc;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.header button:hover {
+  border-color: #9a67ea;
+  color: #9a67ea;
+}
+
+.header .theme-toggle {
+  background: transparent;
+  border: none;
+  color: #bb86fc;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.header .theme-toggle:hover {
+  color: #9a67ea;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 20px 300px;
+  overflow-y: auto;
+  transition: padding 0.3s;
+}
+
+.bg-light .messages-container {
+  padding: 20px 20px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-size: 1rem;
+  border: 1px solid transparent;
+}
+
+.user {
+  align-self: flex-end;
+  color: #bb86fc;
+  border-color: #bb86fc;
+}
+
+.response {
+  align-self: flex-start;
+  color: #9a67ea;
+  border-color: #9a67ea;
+}
+
+.middle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 300px;
+  transition: padding 0.3s;
+  background: url("/galaxy-background.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.bg-light .middle {
+  padding: 0 20px;
+  background: url("/galaxy-background-light.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  background-color: transparent;
+  padding: 20px;
+  border: 1px solid #bb86fc;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s, transform 0.3s;
+  height: 180px;
+}
+
+.card:hover {
+  border-color: #9a67ea;
+  transform: translateY(-5px);
+}
+
+.card p {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  color: #bb86fc;
+}
+
+.card .icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #bb86fc;
+}
+
+.bottom {
+  padding: 20px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: padding 0.3s;
+}
+
+.bg-light .bottom {
+  padding: 20px 20px;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #bb86fc;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 60%;
+  max-width: 600px;
+  transition: border-color 0.3s;
+}
+
+.bg-light .inputBox {
+  border-color: #9a67ea;
+}
+
+.inputBox input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.inputBox input::placeholder {
+  color: #a0a0a0;
+}
+
+.inputBox button {
+  background: transparent;
+  border: none;
+  color: #bb86fc;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.inputBox button:hover {
+  color: #9a67ea;
+}
+
+.bottom p {
+  color: #a0a0a0;
+  font-size: 0.875rem;
+  margin-top: 10px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.background-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.cartoon {
+  position: absolute;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.cartoon1 {
+  top: 10%;
+  left: 5%;
+  width: 200px;
+}
+
+.cartoon2 {
+  bottom: 15%;
+  right: 10%;
+  width: 150px;
+}
+
+.cartoon3 {
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+  .header,
+  .messages-container,
+  .middle,
+  .bottom {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .messages-container,
+  .middle,
+  .bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .messages-container {
+    max-height: 60vh;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .inputBox {
+    width: 90%;
+  }
+
+  .background-images .cartoon1,
+  .background-images .cartoon2,
+  .background-images .cartoon3 {
+    display: none;
+  }
+}
+
+.bg-light .user {
+  color: #9a67ea;
+  border-color: #9a67ea;
+}
+
+.bg-light .response {
+  color: #bb86fc;
+  border-color: #bb86fc;
+}
+
+.bg-light .card {
+  border-color: #9a67ea;
+}
+
+.bg-light .card:hover {
+  border-color: #bb86fc;
+}
+
+.bg-light .inputBox {
+  border-color: #9a67ea;
+}
+
+.bg-light .inputBox button {
+  color: #9a67ea;
+}
+
+.bg-light .inputBox button:hover {
+  color: #bb86fc;
+}
+
+.bg-light .middle .card p {
+  color: #9a67ea;
+}
+
+.bg-light .header button {
+  border-color: #9a67ea;
+  color: #9a67ea;
+}
+
+.bg-light .header button:hover {
+  border-color: #bb86fc;
+  color: #bb86fc;
+}
